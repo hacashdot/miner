@@ -1,21 +1,14 @@
 # Hacash GPU Miner
 
-Hacash GPU miner for **Nvidia GPUs**.
+Hacash GPU miner for **Nvidia GPUs**. 
 
-## Download
-Select the appropriate build based on your Nvidia GPU:
-
-| GPU Series | CUDA Architecture | Models |
-|------------|------------------|--------|
-| **RTX 2000 series (Turing)** | `sm_75` | RTX 2060, 2070, 2080 |
-| **RTX 3000 series (Ampere)** | `sm_86` | RTX 3060, 3070, 3080, 3090 |
-| **RTX 4000 series (Ada)** | `sm_89` | RTX 4060, 4070, 4080, 4090 |
+Supported cards 2000, 3000, 4000 series
 
 ## Usage
 Run the miner with the following command:
 
 ```sh
-./hacashdot_miner_89 --wallet YOUR_WALLET_ADDRESS --gpus 0,1,2
+./hacashdot_miner --wallet YOUR_WALLET_ADDRESS --gpus 0,1,2
 ```
 
 ### Arguments
@@ -25,11 +18,11 @@ Run the miner with the following command:
 ### Examples
 For **single GPU**:
 ```sh
-./hacashdot_miner_89 --wallet 1Pojc73Gw9qt6k2iRbgVzvfygEKax7n9Ks --gpus 0
+./hacashdot_miner --wallet 1Pojc73Gw9qt6k2iRbgVzvfygEKax7n9Ks --gpus 0
 ```
 For **8 GPU mining rig**:
 ```sh
-./hacashdot_miner_89 --wallet 1Pojc73Gw9qt6k2iRbgVzvfygEKax7n9Ks --gpus 0,1,2,3,4,5,6,7
+./hacashdot_miner --wallet 1Pojc73Gw9qt6k2iRbgVzvfygEKax7n9Ks --gpus 0,1,2,3,4,5,6,7
 ```
 
 ## Pool Dashboard
@@ -59,6 +52,27 @@ Ensure CUDA libraries are properly linked:
 sudo ln -s /usr/local/cuda/lib64/libcudart_static.a /usr/lib/libcudart_static.a
 sudo ln -s /usr/local/cuda/lib64/libcudart.so /usr/lib/libcudart.so
 ```
+
+### Hashrate
+
+| GPU Model    | Hashrate (MH/s) |
+|-------------|---------------|
+| **RTX 4090** | 100           |
+| **RTX 4070** | 61            |
+| **RTX 4070 Ti** | 60        |
+| **RTX 4060 Ti** | 32        |
+| **RTX 3090** | 46            |
+| **RTX 3080 Ti** | 46        |
+| **RTX 3080** | 40            |
+| **RTX 3070** | 29            |
+| **RTX 3070 Ti** | 31        |
+| **RTX 3060** | 19            |
+| **RTX 3060 Ti** | 25        |
+| **RTX 2060** | 16            |
+| **RTX 2070** | 17            |
+| **RTX 2080** | 24            |
+| **RTX 2080 Ti** | 31        |
+
 
 ## License
 This project is open-source under the **MIT License**.

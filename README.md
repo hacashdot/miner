@@ -58,7 +58,7 @@ sudo ln -s /usr/local/cuda/lib64/libcudart.so /usr/lib/libcudart.so
 | GPU Model    | Hashrate (MH/s) |
 |-------------|---------------|
 | **RTX 4090** | 100           |
-| **RTX 4070** | 61            |
+| **RTX 4070** | 55            |
 | **RTX 4070 Ti** | 60        |
 | **RTX 4060 Ti** | 32        |
 | **RTX 3090** | 46            |

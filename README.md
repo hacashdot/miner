@@ -28,8 +28,8 @@ For **8 GPU mining rig**:
 ## Pool Dashboard
 Monitor your mining performance:
 
-- **Pool Dashboard:** [https://ha.cash](https://ha.cash)
-- **Miner Statistics:** `https://ha.cash/miner/YOURWALLET`  
+- **Pool Dashboard:** [http://ha.cash](http://ha.cash)
+- **Miner Statistics:** `http://ha.cash/miner/YOURWALLET`  
   *(Replace `YOURWALLET` with your wallet address.)*
 
 ## Hashrate Calculation

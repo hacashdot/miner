@@ -43,7 +43,8 @@ sudo apt-get install -y \
     build-essential \
     cuda-toolkit \
     libcurl4-openssl-dev \
-    libjsoncpp-dev
+    libjsoncpp-dev \
+    libssl-dev
 ```
 
 ### CUDA Symbolic Links
